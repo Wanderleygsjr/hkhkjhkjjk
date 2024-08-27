@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/logoAlura.png">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+
+        <a class="logoAlura" href="https://www.alura.com.br/" alt="Logo da Alura" target="_blank"><img src="assets/imagens/aluralog.png" alt="Logo da Alura"></a> 
+    </header>
+
+    <main>
+        <section>       
+            <textarea class="text-area" cols="41" rows="04" placeholder="Digite seu texto"></textarea>
+            <h6 class="informacao"><img src="assets/imagens/warning.png" alt="Apenas letras minúsculas e sem acentos"> Apenas letras minúsculas e sem acentos.</h6>
+
+            <div class="botoes">
+
+                <button class="btn-encriptar" onclick="btnEncriptar(), clicado(imagem)">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar(), clicado(imagem)">Descriptografar</button>
+            </div>
+            
+        </section>
+        
+        <section class="campo-mensagem">        
+            <textarea class="mensagem" cols="24" rows="10" id="campo-mensagem" readonly></textarea>
+            <img src="assets/imagens/menina.png" alt="explorer girl" id="img-mensagem">
+            <button class="btn-copiar" onclick="btnCopiar(mensagem)">Copiar</button>
+        </section>    
+    </main>
+
+    <footer>
+
+        <nav>   
+            <ul>
+                <li class="nome">
+                    &copy;  Developed by Wanderley Gonçalves</a></li>
+                </li>
+                <li> <a href="https://github.com/Wanderleygsjr" target="_blank"> 
+                    <img class="github-logo" src="assets/imagens/gt logo.png" alt="My github" width = 20px;></a></li>
+
+                <li> <a href="https://www.linkedin.com/in/wanderleygsjr/" target="_blank"> 
+                    <img class="linkeding-logotipo" src="assets/imagens/linkd logo.png" alt="My linkedin" width = 20px;></a></li>
+
+            </ul> 
+        </nav>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
